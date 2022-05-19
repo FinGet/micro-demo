@@ -1,0 +1,11 @@
+{
+  "name": "micro-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FinGet/micro-demo.git",
+  "author": "FinGet <zhangbiaoFT@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

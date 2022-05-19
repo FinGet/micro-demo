@@ -1,0 +1,26 @@
+{
+  "name": "base",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "FinGet <zhangbiaoFT@163.com>",
+  "homepage": "https://github.com/FinGet/micro-demo#readme",
+  "license": "ISC",
+  "main": "lib/base.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinGet/micro-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/FinGet/micro-demo/issues"
+  }
+}
