@@ -1,20 +1,17 @@
 {
-  "name": "pnpm-microapp",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@ultra/popularize",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "pnpm run --parallel serve",
-    "build": "pnpm run --parallel build"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.1",
+    "@ultra/share": "^0.1.0",
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
-    "element-plus": "^2.2.2",
     "pinia": "^2.0.14",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
@@ -31,7 +28,6 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "babel-loader": "^8.2.5",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",

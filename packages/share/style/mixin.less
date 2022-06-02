@@ -1,0 +1,43 @@
+.generate-flex(@name, @val) {
+  -webkit-@{name}: @val;
+	-moz-@{name}: @val;
+	-ms-@{name}: @val;
+	-o-@{name}: @val;
+	@{name}: @val;
+}
+
+
+.generate-flex-item(@prefix, @name, @keys, @vals, @i: 1) when(@i =< length(@keys)) {
+  @val: extract(@vals, @i);
+  @key: extract(@keys, @i);
+  .@{prefix}-@{key} {
+    -webkit-@{name}: @val;
+    -moz-@{name}: @val;
+    -ms-@{name}: @val;
+    -o-@{name}: @val;
+    @{name}: @val;
+  }
+  .generate-flex-item(@prefix, @name, @keys, @vals, (@i + 1));
+}
+
+
+.generate-width(@n, @i: 50) when (@i =< @n) {
+  .width@{i}px {
+    width: unit(@i,px);
+  }
+  .generate-width(@n, (@i + 50));
+}
+
+.generate-margin(@n, @d,@D,@i: 5) when (@i =< @n) {
+  .margin@{d}@{i} {
+    margin-@{D}: unit(@i,px) !important;
+  }
+  .generate-margin(@n, @d,@D,(@i + 5));
+}
+
+.generate-padding(@n, @d,@D,@i: 5) when (@i =< @n) {
+  .padding@{d}@{i} {
+    padding-@{D}: unit(@i,px) !important;
+  }
+  .generate-padding(@n, @d,@D,(@i + 5));
+}
