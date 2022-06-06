@@ -1,7 +1,6 @@
 <template>
   <div>
     这是公共组件 {{msg}}
-    改一下
   </div>
 </template>
 

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <el-card>
+      <TestComponent msg="来自子应用的props"/>
       <h1>子项目</h1>
       asdkfjask
       {{pdata}}
@@ -15,6 +16,7 @@
 <script setup lang="ts">
 	import { ElMessage } from 'element-plus';
 	import { onMounted, ref } from 'vue';
+	import TestComponent from '@ultra/share/components/test.vue';
 	let pdata = ref(null);
 	onMounted(() => {
 		// @ts-ignore
