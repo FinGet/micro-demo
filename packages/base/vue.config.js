@@ -10,6 +10,7 @@ function resolve (dir) {
 }
 
 module.exports = {
+  publicPath: './',
   configureWebpack: {
     plugins: [
       Icons({

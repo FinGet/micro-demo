@@ -1,9 +1,13 @@
 <template>
   <div>
+    <!--
+      url: nginx 配置的 子项目路径
+      baseroute: nginx 配置的 主项目路径 + 项目中子项目的路由入口
+     -->
     <micro-app
       name='popularize'
-      url='http://localhost:8888/'
-      baseroute='/popularize'
+      url='http://www.finget.xyz/popularize'
+      baseroute='/micro/popularize'
       @datachange='handleDataChange'></micro-app>
   </div>
 </template>
