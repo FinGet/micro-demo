@@ -6,7 +6,7 @@
      -->
     <micro-app
       name='popularize'
-      url='http://www.finget.xyz/popularize'
+      :url='url'
       baseroute='/micro/popularize'
       @datachange='handleDataChange'></micro-app>
   </div>
@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 	import { ElMessage } from 'element-plus';
-
+	const url = process.env.NODE_ENV === 'development' ? 'http://localhost:8888/popularize' : 'http://www.finget.xyz/popularize';
 	const handleDataChange = (e) => {
 		console.log(e.detail.data);
 		const handleDataChange = (e: CustomEvent): void => {

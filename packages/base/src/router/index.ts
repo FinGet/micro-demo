@@ -24,7 +24,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-	history: createWebHistory(process.env.NODE_ENV === 'development' ? '' : '/micro'),
+	history: createWebHistory('/micro'),
 	routes
 });
 
