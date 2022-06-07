@@ -19,10 +19,6 @@
 	import TestComponent from '@ultra/share/components/test.vue';
 	let pdata = ref(null);
 	onMounted(() => {
-		// @ts-ignore
-		// window.microApp.addDataListener((data: any) => {
-		// 	pdata = data;
-		// });
 		const data = window.microApp.getData();
 		pdata.value = data;
 		console.log(pdata);
@@ -42,14 +38,12 @@
 
 	const setGlobalData = () => {
 		// setGlobalData只接受对象作为参数
-		// @ts-ignore
 		window.microApp.setGlobalData({ type: '子应用全局数据' });
 	};
 
 	let gdata = ref(null);
 
 	const getGlobalData = () => {
-		// @ts-ignore
 		const globalData = window.microApp.getGlobalData(); // 返回全局数据
 		console.log(globalData);
 		gdata.value = globalData;

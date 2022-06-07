@@ -2,7 +2,9 @@
   <div class="sidebar">
     <router-link to="/home">
       <div>
-        <i-ep-home-filled /> 首页
+        <el-icon :size="20" color="#fff">
+          <i-custom-home />
+        </el-icon>  首页
       </div>
     </router-link>
     <div>
@@ -23,7 +25,6 @@
 </template>
 
 <script setup lang="ts">
-
 </script>
 
 <style lang="less" scoped>

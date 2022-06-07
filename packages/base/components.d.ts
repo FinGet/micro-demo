@@ -11,10 +11,11 @@ declare module '@vue/runtime-core' {
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElMain: typeof import('element-plus/es')['ElMain']
+    ICustomHome: typeof import('~icons/custom/home')['default']
     IEpEdit: typeof import('~icons/ep/edit')['default']
     IEpHomeFilled: typeof import('~icons/ep/home-filled')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
+    RouterView: typeof import('vue-router')['RouterView'],
   }
 }
 

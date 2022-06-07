@@ -7,3 +7,9 @@ import 'element-plus/dist/index.css';
 
 microApp.start();
 createApp(App).use(router).mount('#app');
+
+declare module '@vue/runtime-core' {
+  export interface GlobalComponents {
+    MicroApp: any
+  }
+}

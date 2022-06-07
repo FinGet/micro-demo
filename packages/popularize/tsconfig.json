@@ -13,7 +13,8 @@
     "noUnusedLocals": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "unplugin-icons/types/vue"
     ],
     "paths": {
       "@/*": ["src/*"],

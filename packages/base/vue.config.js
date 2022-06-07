@@ -30,9 +30,7 @@ module.exports = {
 				],
         resolvers: [
           ElementPlusResolver(),
-          IconsResolver({
-            prefix: 'Icon'
-          })
+          IconsResolver()
         ]
       }),
       Components({
@@ -41,9 +39,9 @@ module.exports = {
 					ElementPlusResolver(),
 					// {prefix}-{collection}-{icon} {前缀（默认i）}-{图标集名称（custom）}-{图标名称（refresh-line）}
 					IconsResolver({
-						enabledCollections: ['ep']
+						enabledCollections: ['ep'],
+            customCollections: ['custom']
 					})
-					// ElIconResolver()
 				]
 			})
     ]

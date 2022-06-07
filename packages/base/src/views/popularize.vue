@@ -13,7 +13,8 @@
 </template>
 
 <script setup lang="ts">
-	import { ElMessage } from 'element-plus';
+
+	// import { ElMessage } from 'element-plus';
 	const url = process.env.NODE_ENV === 'development' ? 'http://localhost:8888/popularize' : 'http://www.finget.xyz/popularize';
 	const handleDataChange = (e) => {
 		console.log(e.detail.data);
